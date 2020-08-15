@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+	margin: 0px auto;
+	min-width: 320px;
+	max-width: 680px;
+	background-color: #efefef;
+}
+
+.App__graph {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.App__graphbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100px;
+}
+
+.App__buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.Graph_Container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	height: 300px;
+
+}
+
+.Buttonbar {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.Graphbar__flavor {
+
+}

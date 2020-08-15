@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+/*colors*/
+/****************************
+teal body & hover    #63CEC2;
+dark grayish blue    rgba(67, 75, 89, 0.7);
+light gray           #F7F8F9;
+medium gray          #CCC;
+****************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  background-color: #63CEC2;
+}
+
+h2 {
+  margin: 0px;
+  text-align: center;
+  font-weight: 300;
+  color: #F7F8F9;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-weight: 300;
+  color: #F7F8F9;
+}
+
+.SignIn {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 40px 50px 20px 50px;
+  max-width: 420px;
+  min-width: 220px;
+  border-radius: 10px;
+  background-color: rgba(67, 75, 89, 0.7);
+}
+
+.SignIn form {
+  display: flex;
+  flex-direction: column;
+}
+
+.SignIn input {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.SignIn .login-btn {
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #CCC;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center; 
+  font-size: .6875em;
+  text-transform: uppercase;
+}
+
+.SignIn .forgot {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.SignIn .login-btn:hover {
+  color: #63CEC2;
+  background-color: #fff;
+}
+
+.SignIn .forgot:hover {
+  color: #63CEC2;
+}
+
+.SignIn input:focus {
+  outline: none;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 40px 20px 20px 20px;
+  max-width: 480px;
+  min-width: 220px;
+  border-radius: 10px;
+  background-color: rgba(67, 75, 89, 0.7);
+}
+
+.Profile .profile-deets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+
+.Profile .profile-deets img {
+  width: 47.5%;
+  height: 47.5%;
+  border-radius: 5px;
+}
+
+.Profile .profile-deets ul {
+  margin: 0px;
+  padding: 0px;
+  width: 47.5%;
+  list-style: none;
+}
+
+.Profile .profile-deets li {
+  color: #fff;
+  font-size: .8em;
+}
+
+.Profile .edit {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.Profile .edit:hover {
+  color: #63CEC2;
+}

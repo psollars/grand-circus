@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Erica+One|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
+body {
+	min-width: 320px;
+	max-width: 680px;
+	margin: 0px auto;
+	background-color: #E3D7D4;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+/* red text #D14E44*/
+/* table inactive #EBEBEB*/
+/* table active #A3A0A0*/
+/* save button #008800*/
+.container {
+	margin: 10vh 0px 0px 0px;
+	padding: 0px 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inner-container {
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.inner-container div {
+    height: 100px;
+    width: 100px; /*calc(100% * (1/3) - 10px - 1px);*/
+    background-color: #EBEBEB;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	margin: 10px;
+}
+
+.reservation {
+	display: none;
+	background: #fff;
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: -300px;
+	padding: 20px 40px 40px 40px;
+	width: 520px;
+	z-index: 100;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+	border-radius: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-text {
+	border: none;
+	border-bottom: 1px solid #A3A0A0;
+	margin-bottom: 1em;
+	padding: 10px 0px;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.form-text:focus{
+    outline: none;
+}
+
+.form-btn {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	color: #fff;
+	background-color: #008800;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-family: 'Roboto Mono', sans-serif;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
+}
+
+.cancel {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	margin: 0px;
+	padding: 10px;
+}
+
+h1 {
+	margin: 0px;
+	font-family: 'Titillium Web', cursive;
+	font-size: 3em;
+	color: #D14E44;
+}	
+
+h2 {
+	
+}
+
+h3 {
+	font-family: 'Titillium Web', cursive;
+	color: #D14E44;
+	font-size: 2em;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+.inner-container div.available {
+	background-color: #EBEBEB;
+}
+
+.inner-container div.reserved {
+	background-color: #A3A0A0;
+	cursor: not-allowed;
+}
+
+@media only screen and (min-width: 480px) {
+	/*styles for tablet*/
+}

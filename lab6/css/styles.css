@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Munro;
+	src: url('../assets/fonts/munro/Munro.ttf'); }
+
+* {
+	font-family: "Munro", "Roboto Mono", Arial, sans-serif;
+}
+
+body {
+	margin: 10px;
+	min-width: 320px;
+    max-width: 680px;
+	background-color: #002b36;
+	margin: 0px auto;
+}
+
+.game-data {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #eee8d5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-family: "Munro", "Roboto Mono", arial, sans-serif;
+} 
+
+
+.dialog {
+    height: 150px;
+    background-color:#eee8d5;
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 10px; 
+    box-shadow: inset 0 0 20px #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    padding:  15px 30px;
+	
+}
+
+#dialog {
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.player-data {
+    display: flex;
+    width: 210px;
+    height: 200px;
+    background-color: #eee8d5;
+    box-shadow: inset 0 0 10px #000000;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+#startButton {
+    background-color: #cb4b16;
+}
+
+#userPlayerName{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mainHeader {
+    text-align: center;
+    color: #fdf6e3;
+    padding-top: 30px;
+}
+
+#userAttackButton {
+    display:none;
+    background-color: #cb4b16;
+}
+
+#userHealButton {
+    display: none;
+    background-color: #859900;
+}
+
+#userRetreatButton {
+    display: none;
+    background-color: #b58900;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

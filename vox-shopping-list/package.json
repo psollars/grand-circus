@@ -1,0 +1,17 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Ross-Hunter <ross-hunter@ross-hunter.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1",
+    "pg": "^7.4.0"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "heroku-postbuild": "cd client && yarn install && yarn build"
+  }
+}

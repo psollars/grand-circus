@@ -1,0 +1,81 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+/* app styles */
+.app {
+	margin: 0px auto;
+	min-width: 320px;
+	max-width: 680px;
+	background-color: #efefef;
+}
+
+.app__cart {
+	background-color: #e3e3e3;
+}
+
+.app__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/* cart styles */
+.cart {
+
+}
+
+.cart__item {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cart__item div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.cart__remove {
+
+}
+
+.cart__itemname {
+
+}
+
+.cart__price {
+
+}
+
+.cart__total {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* add new item form styles */
+.add__form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.add__form label {
+
+}
+
+.add__input {
+	flex-wrap: wrap;
+
+}
+
+.add__button {
+
+}
+
+
+

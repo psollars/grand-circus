@@ -1,0 +1,304 @@
+/* Fonts */
+
+@font-face {
+	font-family: "grand-hotel";
+	src: url(../fonts/GrandHotel-Regular.otf);
+}
+
+/* Section Styles */
+
+body {
+	background-image: url("../images/texture.png");
+	background-repeat: repeat;
+	background-color: rgba(10, 10, 20, .05);
+}
+
+header {
+	background-color: #5E91A8; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 104px;
+	z-index: 2;
+}
+
+footer {
+	background-color: #999;
+	height: 40px;
+	text-align: center;
+}
+
+footer p {
+	padding-top: 13px;
+}
+
+/* Navigation */
+
+nav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+	display: flex;
+}
+
+nav li {
+	margin-right: 10px; 
+	border: 2px solid #222;
+	background-color: #efefef;
+}
+
+nav li:hover {
+	border: 2px solid #fff;
+}
+
+nav li a, nav li a:visited {
+	display: inline-block;
+	padding: 13px;
+	font-family: Roboto Slab;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: #333;
+}
+
+nav li a:focus {
+	border-color: blue;
+}
+
+/* content */
+
+content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 140px 55px 0px 55px;
+
+}
+
+content>div {
+	margin: 0px 5px 0px 5px;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: grand-hotel;
+	color: #333;
+	margin: .2em 0em .2em 0em;
+}
+
+h1 {
+	font-size: 5rem;
+}
+h2 {
+	font-size: 3rem;
+}
+h3 {
+	font-size: 2rem;
+}
+
+p, li, form, blockquote {
+	font-size: 1rem;
+	font-family: Lato;
+	color: #333;
+}
+
+h1.title {
+	margin: 0px 0px 0px 10px;
+}
+
+footer p {
+	font-size: .8em;
+}
+
+blockquote {
+	border-left: 5px solid #999;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+/* Gallery Styles */
+
+#gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#gallery figure {
+	margin: 0px 10px;
+	max-width: 260px;
+}
+
+#gallery figure img {
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 1em 3em 1em 3em / 2em 1em 2em 1em;
+	width: 100%;
+	height: auto;
+}
+
+#gallery figure img:hover {
+	border: 1px solid #999;
+	box-shadow: 2px 2px 10px 0px #999;
+}
+
+#gallery figcaption {
+	padding: 15px;
+	font-family: lato;
+	text-align: center;
+}
+
+/* Form Styles */
+
+
+#contact {
+	margin: auto;
+	width: 60%
+}
+
+
+fieldset {
+	display: flex;
+	border: none;
+	margin: 0px 0px 10px 0px;
+	/*min-width: 100%;*/
+	padding: 0px;
+	width: 100%;
+}
+
+#contact input, #contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px 0px;
+}
+
+#radio-group {
+	display: inline-flex;
+}
+
+#contact input[type="radio"] {
+	display: none;
+}
+
+#contact input[type="radio"]+label {
+	/*display: flex;
+	width: 33%;*/
+	border: 1px solid #CCC;
+	background: #fff;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+#contact input[type="radio"]:checked+label {
+	background-color: #E9554E;
+}
+
+#contact textarea {
+	height: 100px;
+	margin: 10px 0px;
+	resize: none;
+}
+
+#contact button {
+	width: 100%;
+	border: none;
+	background:# 5E91A8;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+
+
+/* Loud Noises */
+
+#contact #get-loud {
+	display: none;
+	background: #E9554E;
+}
+
+#loud-noises {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -226px;
+	margin-top: -179px;
+	z-index: 100;
+}
+
+
+/* About Me Styles */
+
+#favorites li:nth-child(odd) {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#favorites li {
+	padding: 10px 0px;
+}
+
+#feature {
+	width: 400px;
+	height: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+	h1.title {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	
+	h3 {
+		font-size: 1.5rem;
+	}
+	
+	header {
+		position: relative;
+	}
+	
+	nav {
+		position: absolute;
+		margin-left: -166.74px;
+		left: 50%;
+		top: 100px;
+	}
+
+	content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin: 80px 55px 0px 55px;
+	}	
+	nav li:hover {
+		background-color: rgba(255,255,255,.5);
+	}
+
+}
+
+
+
+
+
+
+

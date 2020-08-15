@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 class="title">Contact Me</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<content>
+		<h2>Let's get in touch</h2>
+		<p>Please tell me a little about yourself and reach out to me here.</p>
+		<form id="contact" action="" method="post">
+			<fieldset>
+				<input placeholder="Your Name" type="text" tabindex="1" required="required" >
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your Email Address" type="email" tabindex="2" required="required">
+			</fieldset>
+			<fieldset>
+				<label for="birthday">What's your birthday?</label><br />
+				<input placeholder="Your Birthday" type="date" tabindex="3">
+			</fieldset>
+			<fieldset>
+				<input placeholder="Your Favorite Color" type="text" tabindex="4">
+			</fieldset>
+			<fieldset>
+				<label for="radio-group">Do you prefer dogs or cats?</label>
+			</fieldset>
+			<fieldset id="radio-group">
+				<input type="radio" id="dog" name="radio-group" checked>
+				<label for="dog">Dogs</label>
+				<input type="radio" id="cat" name="radio-group">
+				<label for="cat">Cats</label>
+				<input type="radio" id="both" name="radio-group">
+				<label for="both">Both!</label>
+			</fieldset>
+		</fieldset>
+		<fieldset>
+			<textarea id="text-area" placeholder="Type your Message Here...." tabindex="5" required="required"></textarea>
+		</fieldset>
+		<fieldset>
+			<button name="get-loud" type="button" id="get-loud">GET LOUD!!!</button>
+		</fieldset>
+		<fieldset>
+			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+		</fieldset>
+	</form>
+</content>
+	<div id="loud-noises">
+		<img src="images/loud-noises.jpg">
+	</div>
+<script src="js/javascript.js"></script>
+</body>
+<footer>
+	<p>Thanks for checking out my project, guys ;)</p>
+</footer>
+</html>

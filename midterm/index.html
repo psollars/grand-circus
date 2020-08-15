@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<content>
+	<div class="container">
+		<div class="budget-bar">
+			<p class="remaining">Remaining Budget: $<span id="remaining">200</span></p>
+			<p class="total">Total Budget: $<span id="total">300</span></p>
+			<meter id="budget" min="0" max="300" low="0" value="200"></meter>
+		</div>
+		<div class="categories">
+			<div class="category entertainment"><p>Entertainment</p><p class="category-amount">$<span id="entertainment-spend">0</span></p></div>
+			<div class="category food"><p>Food</p><p class="category-amount">$<span id="food-spend">0</span></p></div>
+			<div class="category clothing"><p>Clothing</p><p class="category-amount">$<span id="clothing-spend">0</span></p></div>
+			<div class="category bills"><p>Bills</p><p class="category-amount">$<span id="bills-spend">0</span></p></div>
+		</div>
+		<div class="add-new-purchase">
+			<button id="purchase-form-trigger">Add New Purchase</button>
+		</div>
+		<div class="new-purchase">
+			<div id="purchase-cancel">X</div>
+			<h3>Add New Purchase</h3>
+			<form class="purchase-inputs">
+				<input id="purchase-name" type="text" placeholder="Enter New Purchase" value="" required/>
+				<input id="purchase-date" type="date" placeholder="Date" value="" required/>
+				<input id="purchase-amount" type="number" placeholder="Purchase Amount $" min="0.01" step="0.01" max="2500" value="" required/>
+				<select id="purchase-category" type="" placeholder="Category" value="" required>
+					<option id="option-select" value="">Purchase Category</option>
+					<option value="2">Food</option>
+					<option value="4">Bills</option>
+					<option value="3">Clothing</option>
+					<option value="1">Entertainment</option>
+				</select>
+				<button id="purchase-save" class="form-btn" type="button">Save</button>
+			</form>
+		</div>
+		<h3>Your Purchases</h3>
+		<div class="purchases">
+		</div>
+	</div>	
+</content>
+<script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

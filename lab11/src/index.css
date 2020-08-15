@@ -1,0 +1,45 @@
+body {
+	max-width: 680px;
+	min-width: 320px;
+	margin: 0px auto;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.App {
+	background-color: #efefef;
+}
+
+.deck {
+	padding: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardContent {
+	margin: 20px 0px;
+	padding: 0px 60px;
+	height: 120px;
+	text-align: center;
+}
+
+.cardIndex {
+
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.controls div {
+	justify-content: space-evenly;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #000;
+}

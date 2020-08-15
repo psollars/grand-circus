@@ -1,0 +1,255 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Lato');
+
+/* typography */
+* {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+input, select, button {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+/* containers */
+body {
+	min-width: 320px;
+	max-width: 680px;
+	margin: 0px auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px;
+}
+
+.budget-bar {
+	/*position: fixed;*/
+	width: 100%;
+	height: 85px;
+	background-color: #fff;
+	z-index: 100;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/*add this at screen position 85px or something box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);*/
+}
+
+.categories {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+	margin: 10px 0px 0px 0px;
+}
+
+/* budget bar elements */
+.budget-bar p {
+	margin: 10px 0px 10px 0px;
+}
+
+meter {
+	width: 85%;
+	max-width: 480px;
+}
+
+/* categories */
+.category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 48%;
+	margin: 5px 0px;
+	border-radius: 5px;
+}
+
+.category p {
+	margin: 3px 0px;
+}
+
+.entertainment, .category1 {
+	background-color: #45eac6;
+}
+
+.food, .category2 {
+	background-color: #feb037;
+}
+
+.clothing, .category3 {
+	background-color: #0cc675;
+}
+
+.bills, .category4 {
+	background-color: #167ee6;
+}
+
+/* add new purchase */
+.add-new-purchase {
+	display: flex;
+	justify-content: center;
+}
+
+#purchase-form-trigger {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px 10px 0px;
+	width: 50%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.new-purchase {
+	display: none;
+	position: absolute;
+	top: 95px;
+	left: 50%;
+	margin-left: -160px;
+	width: 260px;
+	/*width: calc(100% - 60px);*/
+	/*max-width: 400px;*/
+	/*min-width: 260px;*/
+	justify-content: center;
+	padding: 15px 30px;
+	background-color: #333;
+	border-radius: 5px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+	z-index: 200;
+	display: none;
+}
+
+.new-purchase h3 {
+	color: #fff;
+}
+
+.purchase-inputs {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+form input, select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+.form-btn {
+	justify-content: center;
+	margin: 10px 0px 10px 0px;
+	height: 50px;
+	background-color: #4bbf6b;
+	color: #333;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#purchase-cancel {
+    width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	transition: ease 0.25s all;
+	-webkit-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	border-radius: 1000px;
+	background: rgba(0,0,0,0.8);
+	font-family: Arial, Sans-Serif;
+	font-size: 20px;
+	line-height: 100%;
+	color: #f1f1f1;
+	cursor: pointer;
+}
+ 
+#purchase-cancel:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+/* your purchases */
+.purchases {
+	display: flex;
+	flex-direction: column;
+}
+
+.purchase-detail {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin: 5px 0px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+.purchase-detail p {
+	display: flex;
+	margin: 0px 0px;
+}
+
+.purchase-name {
+	flex-grow: 1;
+	max-width: 35%;
+}
+
+/* media queries */
+@media only screen and (min-width: 480px) {
+	/* styles for tablet */
+	meter {
+		max-width: 580px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* styles for notebooks */
+	.categories {
+		flex-wrap: nowrap;
+	}
+	
+	.category {
+		margin: 5px 2.5px;
+	}
+
+	.budget-bar {
+		padding: 30px 0px;
+		height: 20px;
+	}
+
+	.budget-bar .total {
+		order: 300;
+	}
+
+	.budget-bar p {
+		margin: 0px
+	}
+
+	meter {
+		max-width: 330px;
+		order: 200;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* styles for desktop */
+}
+
+@media only screen and (min-width: 1200px) {
+	/* styles for large desktop */
+}

@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Lato);
+
+body {
+	margin: 0px auto;
+	max-width: 680px;
+	min-width: 320px;
+	font-family: "Lato", helvetica, arial, sans-serif;
+}
+
+.App {
+	background-color: #efefef;
+
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	font-family: Open Sans, Arial, sans-serif;
+}
+
+body {
+	background-color: #f9fafd;
+	background-image: url('../images/abstract_bubbles.svg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 95% 50%;
+	margin: 30px;
+
+	height: 200vh; /*temp to show scrolling*/
+}
+
+content {
+	position: relative;
+	top: 20vh;
+}
+
+nav {
+	position: absolute;
+	top: 14px;
+	right: 30px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+}
+
+nav li {
+	display: inline;
+	padding: 10px 30px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+#featured-menu-item {
+	color: #fff;
+	background-color: #000;
+	border-radius: 50px;
+}
+
+#featured-menu-item a {
+	color: #fff;
+}
+
+.featured {
+	color: #fff;
+	background-color: #000;
+	border-radius: 50px;
+}
+
+.intro {
+	width: 500px;
+	padding-left: 20px;
+	border-left: 2px solid #ccc;
+}
+
+.button {
+	position: fixed;
+	left: 50%;
+	margin-left: -74px;
+	bottom: 14px;
+	padding: 10px 30px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 50px;
+	font-size: 1em;
+	border: none;
+}
+
+	@media only screen and (min-width: 480px) {
+		/*styles for tablet*/
+	}
+	@media only screen and (min-width: 768px) {
+		/*styles for notebooks*/
+	}
+	@media only screen and (min-width: 992px) {
+		/*styles for desktop*/
+	}
